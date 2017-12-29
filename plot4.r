@@ -21,7 +21,7 @@ par(mfrow = c(2, 2))
 #plotting the graph and labelling x and y axiz
 plot(datetime, globalActivePower, type="l", xlab="", ylab="Global Active Power", cex=0.2)
 plot(datetime, voltage, type="l", xlab="datetime", ylab="Voltage")
-plot(datetime, subMetering1, type="l", ylab="Energy Submetering", xlab="")
+plot(datetime, subMetering1, type="l", xlab="" ,ylab="Energy Submetering")
 lines(datetime, subMetering2, type="l", col="red")
 lines(datetime, subMetering3, type="l", col="blue")
 #naming the graph, giving legend

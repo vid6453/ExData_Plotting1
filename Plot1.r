@@ -9,6 +9,6 @@ colnames(data) <- c("Date","Time","Global_active_power","Global_reactive_power",
 globalActivePower <- as.numeric(data$Global_active_power)
 #plotting the gragh
 png("plot1.png", width=480, height=480)
-hist(globalActivePower, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+hist(globalActivePower, main="Global Active Power", col="red", xlab="Global Active Power (kilowatts)")
 #disabling png
 dev.off()

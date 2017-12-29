@@ -11,10 +11,10 @@ sub_metering_1 <- as.numeric(data$Sub_metering_1)
 sub_metering_2 <- as.numeric(data$Sub_metering_2)
 sub_metering_3 <- as.numeric(data$Sub_metering_3)
 #plotting the required graphs with required height and width
-png("plot3.png", width=480, height=480)
+png("plot3.png", height=480, width=480)
 plot(datetime, sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
 lines(datetime, sub_metering_2,type="l", col="red")
 lines(datetime, sub_metering_3,type="l", col="blue")
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lwd=2.5, col=c("black", "red", "blue"))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"),lwd=2.5)
 #closing png
 dev.off()
